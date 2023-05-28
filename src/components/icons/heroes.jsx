@@ -1,0 +1,35 @@
+export const Check = ({ className, strokeWidth }) => {
+	return (
+		<svg
+			xmlns='http://www.w3.org/2000/svg'
+			fill='none'
+			viewBox='0 0 24 24'
+			strokeWidth={strokeWidth}
+			stroke='currentColor'
+			className={className}>
+			<path
+				strokeLinecap='round'
+				strokeLinejoin='round'
+				d='M4.5 12.75l6 6 9-13.5'
+			/>
+		</svg>
+	)
+}
+
+export const Menu = ({ className, strokeWidth }) => {
+	return (
+		<svg
+			xmlns='http://www.w3.org/2000/svg'
+			fill='none'
+			viewBox='0 0 24 24'
+			strokeWidth={strokeWidth}
+			stroke='currentColor'
+			className={`${className}`}>
+			<path
+				strokeLinecap='round'
+				strokeLinejoin='round'
+				d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12'
+			/>
+		</svg>
+	)
+}
