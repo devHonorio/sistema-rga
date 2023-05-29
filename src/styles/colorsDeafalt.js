@@ -6,6 +6,6 @@ export const className = {
 
 	shadowStyles: {
 		shadow: 'shadow-2xl',
-		shadowColor: 'shadow-purple-100',
+		shadowColor: 'shadow-gray-200',
 	},
 }

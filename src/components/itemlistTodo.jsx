@@ -28,7 +28,7 @@ export default function ItemListTodo({ content = '', id = '' }) {
 				}`}
 				htmlFor={id}>
 				<div
-					className={`flex justify-center items-center h-5 w-5   rounded-md ${bgCheck}`}>
+					className={`flex justify-center items-center h-5 w-5 cursor-pointer  rounded-md ${bgCheck}`}>
 					<Check
 						className={`h-3 w-3 text-white ${
 							stateItemList ? 'block' : 'hidden'
