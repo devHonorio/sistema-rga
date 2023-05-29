@@ -1,9 +1,11 @@
-export default function MenuItem({ className }) {
+import Link from 'next/link'
+
+export default function MenuItem({ className, href, name }) {
 	return (
-		<a
-			href='#'
+		<Link
+			href={href}
 			className={` font-normal w-full text-center hover:text-purple-500 ${className}`}>
-			Menu item
-		</a>
+			{name}
+		</Link>
 	)
 }
