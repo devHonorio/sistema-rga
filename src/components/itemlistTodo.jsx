@@ -6,7 +6,9 @@ export default function ItemListTodo({ content = '', id = '' }) {
 	const { colors } = className
 	const [stateItemList, setStateItemList] = useState(false)
 
-	const bgCheck = stateItemList ? colors.gradientContraste : 'bg-white'
+	const bgCheck = stateItemList
+		? colors.gradientContraste
+		: 'bg-white border border-gray-400'
 	return (
 		<li
 			className={` font-normal ${stateItemList ? 'order-last' : 'order-none'}`}>
