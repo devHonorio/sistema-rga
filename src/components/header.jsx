@@ -6,7 +6,7 @@ export default function Header() {
 
 	return (
 		<header
-			className={`flex justify-between py-2 px-2 font-semibold text-white  ${colors.gradient}`}>
+			className={`flex justify-between py-2 px-4 font-semibold text-white  ${colors.gradient}`}>
 			<Navigation />
 
 			<span>DashBoard</span>

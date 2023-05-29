@@ -1,10 +1,12 @@
 import Button from '@/components/buttonDefalt'
 import Input from '@/components/inputs'
 import { className } from '@/styles/colorsDeafalt'
+import { useRouter } from 'next/router'
 
 const { colors } = className
 
 export default function Login() {
+	const router = useRouter()
 	return (
 		<div
 			className={`flex h-screen justify-center items-center flex-col
@@ -27,7 +29,13 @@ export default function Login() {
 					placeholder='jose123'
 				/>
 
-				<Button label={'Entrar'} className='mt-2' />
+				<Button
+					onClick={() => {
+						router.push('/')
+					}}
+					label={'Entrar'}
+					className='mt-2'
+				/>
 			</div>
 		</div>
 	)

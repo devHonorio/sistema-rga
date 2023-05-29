@@ -16,7 +16,7 @@ export default function Navigation() {
 			</button>
 
 			<div
-				className={`absolute z-10 ${displayMenu} flex-col w-32 justify-center items-center divide-y-2 gap-2 py-2 bg-white border-2 text-gray-800 rounded-lg top-7 shadow-2xl`}>
+				className={`absolute z-10 ${displayMenu} flex-col w-32 justify-center items-center divide-y-2 gap-2 py-2 bg-white border-gray-600 border text-gray-800 rounded-lg top-7 shadow-2xl`}>
 				<MenuItem href={'/'} name={'Home'} />
 				<MenuItem href={'/caixa'} name={'Caixa'} />
 				<MenuItem href={'/login'} name={'Login'} />
