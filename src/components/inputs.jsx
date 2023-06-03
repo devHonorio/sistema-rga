@@ -14,7 +14,7 @@ export default function Input({
 				type={type}
 				id={id}
 				placeholder={placeholder}
-				className={`rounded-md text-base px-2 py-1 text-gray-700 font-semibold ${className} `}
+				className={`rounded-md text-base px-3 py-2 text-gray-700 font-semibold ${className} `}
 			/>
 		</div>
 	)

@@ -6,6 +6,7 @@ import ItemTable from '@/components/itemTable'
 import ItemListTodo from '@/components/itemlistTodo'
 import Layout from '@/components/layout'
 import TablePedidos from '@/components/tablePedidos'
+import Todo from '@/components/todo'
 
 export default function () {
 	return (
@@ -18,10 +19,7 @@ export default function () {
 			</Card>
 
 			<Card title='Rafa ou Graci:'>
-				<ItemListTodo id='rg1' content='Casa' />
-				<ItemListTodo id='rg2' content='Bolo' />
-				<ItemListTodo id='rg3' content='Aninha' />
-				<ItemListTodo id='rg4' content='Fazer clien' />
+				<Todo />
 			</Card>
 			<Card title='Caixa:'>
 				<ItemCaixa

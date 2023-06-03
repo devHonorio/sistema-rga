@@ -1,3 +1,4 @@
+import ButtonFAB from '@/components/buttonFAB'
 import Card from '@/components/card'
 import ItemCaixa from '@/components/itemCaixa'
 import ItemTableCaixa from '@/components/itemTableCaixa'
@@ -27,6 +28,8 @@ export default function Caixa() {
 				<ItemTableCaixa />
 				<ItemTableCaixa />
 			</TablePedidos>
+
+			<ButtonFAB />
 		</Layout>
 	)
 }
