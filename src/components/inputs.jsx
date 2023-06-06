@@ -4,6 +4,8 @@ export default function Input({
 	label,
 	placeholder = '',
 	className,
+	value,
+	onChange,
 }) {
 	return (
 		<div className='flex flex-col gap-1 items-start'>
@@ -11,10 +13,12 @@ export default function Input({
 				{!!label && label + ':'}
 			</label>
 			<input
+				value={value}
+				onChange={(e) => onChange(e.target.value)}
 				type={type}
 				id={id}
 				placeholder={placeholder}
-				className={`rounded-md text-base px-3 py-2 text-gray-700 font-semibold ${className} `}
+				className={`rounded-md text-base px-3 py-2 text-gray-700 font-semibold w-full ${className} `}
 			/>
 		</div>
 	)
